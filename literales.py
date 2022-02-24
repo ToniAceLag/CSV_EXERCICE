@@ -17,3 +17,4 @@ MSG_ONCE ="Introdueix el numero de donas de 65 a més anys:"
 TXT_INPUT ="Insereix el nombre del fitxer o un altre nombre si vols crear un altre fitxer:"
 CSV_COUNT ="."
 CSV= ".csv"
+FILE = 'files/'

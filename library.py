@@ -8,7 +8,7 @@ def match_menu():
     return num
 
 def write_csv():
-    with open('files/'+valid_csvname(), 'a', encoding='utf-8',
+    with open(lit.FILE+valid_csvname(), 'a', encoding='utf-8',
               newline='') as csvfile:  #abre el archivo en modo append y lo codifica a 'utf-8'por si acaso el archivo
         fieldnames = ['any', 'codi', 'literal', 'homes_0_14_anys', 'homes_15_65_anys', 'homes__65_anys_a_mes_anys',
                       'dones_0_14_anys', 'dones_15_64_anys', 'dones_65_a_mes_anys',
@@ -34,7 +34,7 @@ def write_csv():
                       'total_1':total_un,'total_2':total_du,'total_3':total_tri})  # la parte que añade al fichero lo que has añadido anterior mente en el for
 
 def read_csv():
-    with open('files/'+valid_csvname()) as csvfile:
+    with open(lit.FILE+valid_csvname()) as csvfile:
         readCSV = csv.reader(csvfile, delimiter=',')
         print(lit.MSG_UNO)
         csvfile.readline()
